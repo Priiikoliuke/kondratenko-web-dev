@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Форма выбора типа верстки */
+.type-selector {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.type-selector form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.type-selector label {
+    font-weight: bold;
+}
+
+.type-selector select {
+    padding: 5px;
+    border: 1px solid #2c3e50;
+    border-radius: 3px;
+}
+
+.type-selector button {
+    padding: 5px 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.type-selector button:hover {
+    background: #1a252f;
+}
+
+/* Стили для табличной верстки */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для блочной верстки */
+.block-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    clear: both;
+}
+
+.block {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 5px;
+    background: white;
+}
+
+/* Подвал */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Для типа A (простой текст) */
+br + strong {
+    display: block;
+    margin-top: 20px;
+}
